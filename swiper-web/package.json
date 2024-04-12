@@ -1,0 +1,26 @@
+{
+    "name": "vue-project",
+    "packageManager": "pnpm@7.0.0",
+    "version": "0.0.0",
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "vue-tsc --noEmit && vite build",
+        "preview": "vite preview --port 5050",
+        "typecheck": "vue-tsc --noEmit",
+        "deploy": "sh deploy.sh"
+    },
+    "dependencies": {
+        "vue": "^3.4.21"
+    },
+    "devDependencies": {
+        "@tsconfig/node20": "^20.1.4",
+        "@types/node": "^20.12.7",
+        "@vitejs/plugin-vue": "^5.0.4",
+        "@vue/tsconfig": "^0.5.1",
+        "typescript": "~5.4.5",
+        "unocss": "0.59.1",
+        "vite": "^5.2.8",
+        "vue-tsc": "^2.0.13"
+    }
+}
