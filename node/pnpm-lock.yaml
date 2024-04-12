@@ -1,0 +1,83 @@
+lockfileVersion: '6.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+dependencies:
+  libreoffice-convert:
+    specifier: ^1.5.1
+    version: 1.5.1
+  ppt-png:
+    specifier: ^2.0.2
+    version: 2.0.2
+
+packages:
+
+  /@hckrnews/converter@0.5.1:
+    resolution: {integrity: sha512-I9s/KYL95+7+IPfXtvBS9ZnkePyHpKUWjui6qgySbDotBoi4grj2tWQJbIq1JecEj08AbNmn+Q45Dm4FV5H7+w==}
+    engines: {node: '>= 18'}
+    dev: false
+
+  /@hckrnews/pdf2png@0.3.3:
+    resolution: {integrity: sha512-6nRlD7BBBC09ZiVmjzlT8y8viz2fjt0UxoJmC/0pn5cH9QcWvib4/wF/DUHvG9dgeI0XG2NlHetSIbxf3Uqk/w==}
+    engines: {node: '>= 18'}
+    dependencies:
+      '@hckrnews/converter': 0.5.1
+      path: 0.12.7
+    dev: false
+
+  /@hckrnews/ppt2pdf@0.3.3:
+    resolution: {integrity: sha512-HMVmXgCAjEkILHc4HHaay/MpI1dRhxn7XsrTJpuEqJpk7UfUbeYbKNRdKIllCqSWHm4dy8A/l+ZOs+wcrJ8zXA==}
+    engines: {node: '>= 18'}
+    dependencies:
+      '@hckrnews/converter': 0.5.1
+    dev: false
+
+  /async@3.2.5:
+    resolution: {integrity: sha512-baNZyqaaLhyLVKm/DlvdW051MSgO6b8eVfIezl9E5PqWxFgzLm/wQntEW4zOytVburDEr0JlALEpdOFwvErLsg==}
+    dev: false
+
+  /inherits@2.0.3:
+    resolution: {integrity: sha512-x00IRNXNy63jwGkJmzPigoySHbaqpNuzKbBOmzK+g2OdZpQ9w+sxCN+VSB3ja7IAge2OP2qpfxTjeNcyjmW1uw==}
+    dev: false
+
+  /libreoffice-convert@1.5.1:
+    resolution: {integrity: sha512-NtoH+OLl+ATuQE/HKPcpMgeJswwmJuvxZVzZ/+0kMZ3IxhCua8wdNeHqKelj36/2z7P595qjCNvQ2518gg8tvA==}
+    engines: {node: '>=6'}
+    dependencies:
+      async: 3.2.5
+      tmp: 0.2.3
+    dev: false
+
+  /path@0.12.7:
+    resolution: {integrity: sha512-aXXC6s+1w7otVF9UletFkFcDsJeO7lSZBPUQhtb5O0xJe8LtYhj/GxldoL09bBj9+ZmE2hNoHqQSFMN5fikh4Q==}
+    dependencies:
+      process: 0.11.10
+      util: 0.10.4
+    dev: false
+
+  /ppt-png@2.0.2:
+    resolution: {integrity: sha512-z9OQeDQUwKnWV+vI2JNOjVYWzFdHhVu4wejw4fo+Sr2/s6c1dWlN781XpXuDlnxlVhe7ww3WOpRV/akZYZgWsw==}
+    engines: {node: '>= 18'}
+    dependencies:
+      '@hckrnews/converter': 0.5.1
+      '@hckrnews/pdf2png': 0.3.3
+      '@hckrnews/ppt2pdf': 0.3.3
+    dev: false
+
+  /process@0.11.10:
+    resolution: {integrity: sha512-cdGef/drWFoydD1JsMzuFf8100nZl+GT+yacc2bEced5f9Rjk4z+WtFUTBu9PhOi9j/jfmBPu0mMEY4wIdAF8A==}
+    engines: {node: '>= 0.6.0'}
+    dev: false
+
+  /tmp@0.2.3:
+    resolution: {integrity: sha512-nZD7m9iCPC5g0pYmcaxogYKggSfLsdxl8of3Q/oIbqCqLLIO9IAF0GWjX1z9NZRHPiXv8Wex4yDCaZsgEw0Y8w==}
+    engines: {node: '>=14.14'}
+    dev: false
+
+  /util@0.10.4:
+    resolution: {integrity: sha512-0Pm9hTQ3se5ll1XihRic3FDIku70C+iHUdT/W926rSgHV5QgXsYbKZN8MSC3tJtSkhuROzvsQjAaFENRXr+19A==}
+    dependencies:
+      inherits: 2.0.3
+    dev: false
