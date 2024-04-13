@@ -41,8 +41,8 @@ libre.convertAsync = require('util').promisify(libre.convert);
 
 async function main() {
     const ext = '.jpg'
-    const inputPath = path.join(__dirname, './input/1.ppt');
-    const outputPath = path.join(__dirname, `./output/example${ext}`);
+    const inputPath = path.join(__dirname, '../swiper-web/input/1.ppt');
+    const outputPath = path.join(__dirname, `../swiper-web/output/example${ext}`);
 
     // Read file
     const docxBuf = await fs.readFile(inputPath);
